@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <main>
+    <section class="header">
+      <div class="player">
+        <div id="control-panel">
+          <div class="title">
+            <p class="track-title"></p>
+          </div>
+          <div class="progress-block">
+            <div class="progress-bar">
+              <progress id="progress" value="0"></progress>
+            </div>
+          </div>
+          <div class="timeline">
+            <p class="timeline-start"></p>
+            <p class="timeline-end"></p>
+          </div>
+          <div class="player-controls">
+            <div class="controls-btns">
+              <button class="play-prev player-icon"></button>
+              <button class="play player-icon"></button>
+              <button class="play-next player-icon"></button>
+            </div>
+            <div class="volume-block">
+              <button id="volume"></button>
+              <input type="range" id="volume-level" max="1" min="0" step="0.01">
+            </div>
+          </div>
+        </div>
+        <div class="playlist__block">
+          <ul class="play-list"></ul>
+        </div>
+      </div>
+      <div class="settings-panel">
+        <div class="settings-block">
+          <p class="lang-title heading" data-name="lang"></p>
+          <p class="bgImg-title heading" data-name="src"></p>
+          <p class="features-title heading" data-name="feature"></p>
+        </div>
+        <div class="cards">
+          <div class="card nonactive-card" id="lang">
+            <p class="lang" data-lang="en">EN</p>
+            <p class="lang" data-lang="ru">RU</p>
+          </div>
+          <div class="card nonactive-card" id="src">
+            <button class="btn" id="git">Git</button>
+            <button class="btn" id="unsplash">Unsplash</button>
+            <button class="btn" id="flickr">Flickr</button>
+          </div>
+          <div class="card nonactive-card" id="feature">
+            <button class="btn">Clock</button>
+            <button class="btn">Weather</button>
+            <button class="btn">Player</button>
+            <button class="btn">Quotes</button>
+          </div>
+        </div>
+      </div>
+      <div class="todo__block">
+        <button id="todolist" class="todo-btn">ToDo</button>
+        <div class="todo-list__block">
+          <ol class="todo-list__list">
+            <li class="todo"></li>
+            <li class="todo"></li>
+            <li class="todo"></li>
+            <li class="todo"></li>
+            <li class="todo"></li>
+          </ol>
+        </div>
+      </div>
+      <div class="weather">
+        <input type="text" class="city" />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <div class="container">
+        <time class="time"></time>
+        <date class="date"></date>
+        <div class="greeting-container">
+          <span class="greeting"></span>
+          <input type="text" class="name" placeholder="[Enter name]" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quotes-block">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
