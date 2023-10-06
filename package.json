@@ -1,0 +1,11 @@
+{
+  "name": "momentum-app-clone",
+  "version": "1.0.0",
+  "description": "1. [Introduction](#introduction)\r 2. [Description](#description)\r 3. [Features](#features)\r 4. [Installation & Local Development](#installation)\r 5. [Technology Stack](#technology-stack)\r 6. [Scripts](#scripts)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
