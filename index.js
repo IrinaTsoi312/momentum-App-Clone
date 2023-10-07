@@ -129,12 +129,14 @@ window.addEventListener('load', getLocalStorage);
 
 // ! Background image
 function getRandomNum() {
-  return Math.floor(Math.random() * (20 - 1) + 1);
+  const randomNum = Math.floor(Math.random() * (20 - 1) + 1);
+  return randomNum < 10 ? '0' + randomNum : randomNum;
 }
 let randomNum = getRandomNum();
+console.log(randomNum)
 function setBg() {
   const img = new Image();
-  img.src = `./assets/img/images/${timeOfDay}/${randomNum}`;
+  img.src = `./assets/img/images/${timeOfDay}/${randomNum}.jpg`;
   img.onload = () => {
     body.style.backgroundImage = `url(${img.src})`;
   };
